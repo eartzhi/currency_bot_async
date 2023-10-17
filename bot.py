@@ -4,7 +4,7 @@ import os
 import time
 from pathlib import Path
 from dotenv import load_dotenv
-from aiogram import Bot, Dispatcher, Router, types
+from aiogram import Bot, Dispatcher, types
 from aiogram.enums import ParseMode
 from aiogram.filters.command import Command
 from aiogram.types import Message
