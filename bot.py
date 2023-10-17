@@ -37,7 +37,7 @@ markup = ReplyKeyboardMarkup(keyboard=[[btn1], [btn2], [btn3], [btn4], [btn5]],
 
 start_time = time.time()
 current_table, wrong_input = Requester.get_request()
-info_logger.info(f'Бот выполнил запрос. Ошибка: {wrong_input}')
+info_logger.info(f'Бот выполнил запрос. Ошибка: "{wrong_input}"')
 
 
 @dp.message(Command('start', 'help'))
@@ -62,7 +62,7 @@ async def values_handler(message: Message) -> None:
                      f' от {message.from_user.first_name}"')
     if int(time.time()-start_time) > 1800 or wrong_input:
         current_table, wrong_input = Requester.get_request()
-        info_logger.info(f'Бот выполнил запрос. Ошибка: {wrong_input}')
+        info_logger.info(f'Бот выполнил запрос. Ошибка: "{wrong_input}"')
         start_time = time.time()
     if wrong_input is None:
         current_list = Requester.currency_list_maker(current_table)
@@ -84,7 +84,7 @@ async def message_handler(message: types.Message) -> None:
     if wrong_input is None:
         if int(time.time() - start_time) > 1800:
             current_table, wrong_input = Requester.get_request()
-            info_logger.info(f'Бот выполнил запрос. Ошибка: {wrong_input}')
+            info_logger.info(f'Бот выполнил запрос. Ошибка: "{wrong_input}"')
             start_time = time.time()
         if wrong_input is None:
             currency1_rate, wrong_input, nominal1 = UserInputCheck.second_check(
