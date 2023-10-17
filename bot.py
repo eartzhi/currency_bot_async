@@ -99,7 +99,7 @@ async def message_handler(message: types.Message) -> None:
                 if wrong_input is None:
                     answer = str(quantity) + ' ' + currency_1.upper() + ' = ' +\
                              str(round(
-                                 ((currency1_rate * nominal2)/
+                                 ((currency1_rate * nominal2) /
                                   (currency2_rate * nominal1)) * quantity,
                                  2)) \
                              + ' ' + currency_2.upper() + ' по курсу ЦБ'
