@@ -32,7 +32,10 @@ btn2 = KeyboardButton(text="USD RUR")
 btn3 = KeyboardButton(text="TRY RUR")
 btn4 = KeyboardButton(text="USD TRY")
 btn5 = KeyboardButton(text="EUR TRY")
-markup = ReplyKeyboardMarkup(keyboard=[[btn1], [btn2], [btn3], [btn4], [btn5]],
+markup = ReplyKeyboardMarkup(keyboard=[
+                                       [btn1, btn2],
+                                       [btn3, btn4, btn5]
+                                      ],
                              resize_keyboard=True)
 
 start_time = time.time()
