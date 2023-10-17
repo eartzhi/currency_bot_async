@@ -34,7 +34,8 @@ btn4 = KeyboardButton(text="USD TRY")
 btn5 = KeyboardButton(text="EUR TRY")
 markup = ReplyKeyboardMarkup(keyboard=[
                                        [btn1, btn2],
-                                       [btn3, btn4, btn5]
+                                       [btn5, btn4],
+                                       [btn3]
                                       ],
                              resize_keyboard=True)
 
