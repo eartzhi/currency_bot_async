@@ -5,7 +5,7 @@ services:
   bot:
     image: eartzhi/currencybot
     restart: unless-stopped
-    command: python bot_file.py
+    command: python bot.py
     build:
       context: .
       dockerfile: ./Dockerfile
