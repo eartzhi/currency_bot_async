@@ -1,0 +1,11 @@
+version: '1.11'
+
+services:
+
+  bot:
+    image: eartzhi/currencybot
+    restart: unless-stopped
+    command: python bot_file.py
+    build:
+      context: .
+      dockerfile: ./Dockerfile
