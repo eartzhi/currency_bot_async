@@ -267,3 +267,7 @@ bot.py 2023-10-17 13:36:26,211 INFO Боту пришло сообщение: "E
 dispatcher.py 2023-10-17 13:36:26,211 INFO Update id=372567429 is handled. Duration 0 ms by bot id=6061234208
 dispatcher.py 2023-10-17 13:36:33,657 INFO Polling stopped
 dispatcher.py 2023-10-17 13:36:33,658 INFO Polling stopped for bot @annoying_raccoon_bot id=6061234208 - 'annoying_raccoon'
+dispatcher.py 2023-10-17 14:15:54,144 INFO Start polling
+dispatcher.py 2023-10-17 14:15:54,780 INFO Run polling for bot @annoying_raccoon_bot id=6061234208 - 'annoying_raccoon'
+dispatcher.py 2023-10-17 14:16:13,483 INFO Polling stopped
+dispatcher.py 2023-10-17 14:16:13,484 INFO Polling stopped for bot @annoying_raccoon_bot id=6061234208 - 'annoying_raccoon'

@@ -37,7 +37,6 @@ markup = ReplyKeyboardMarkup(keyboard=[[btn1], [btn2], [btn3], [btn4], [btn5]],
 
 start_time = time.time()
 current_table, wrong_input = Requester.get_request()
-print('+')
 
 
 @dp.message(Command('start', 'help'))
@@ -63,7 +62,6 @@ async def values_handler(message: Message) -> None:
     if int(time.time()-start_time) > 1800 or wrong_input:
         current_table, wrong_input = Requester.get_request()
         start_time = time.time()
-        print('+')
     if wrong_input is None:
         current_list = Requester.currency_list_maker(current_table)
         answer = current_list
@@ -84,7 +82,6 @@ async def message_handler(message: types.Message) -> None:
     if wrong_input is None and int(time.time() - start_time) > 1800:
         current_table, wrong_input = Requester.get_request()
         start_time = time.time()
-        print('+')
         if wrong_input is None:
             currency1_rate, wrong_input, nominal1 = UserInputCheck.second_check(
                 currency_1, current_table)
