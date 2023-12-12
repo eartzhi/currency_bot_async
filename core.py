@@ -95,11 +95,11 @@ class UserInputCheck:
 
     @staticmethod
     def second_check(current, current_table):
-        current_rate, wrong_input = None, None
+        current_rate, wrong_input, nominal = None, None, None
         try:
             if current in current_table.keys():
                 current_rate = current_table[current]['Value']
-                nominal = current_table[current]['Nominal']
+                nominal = current_table[current]['Nominal']   # здесь
             else:
                 raise CurrencyException()
         except CurrencyException as err:
