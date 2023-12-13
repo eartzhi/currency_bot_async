@@ -20,7 +20,7 @@ load_dotenv(dotenv_path=env_path)
 logging.basicConfig(level=logging.INFO)
 info_logger = logging.getLogger()
 info_logger.setLevel(logging.INFO)
-info_handler = logging.FileHandler('bot.log', 'a', 'utf-8')
+info_handler = logging.FileHandler('logs/bot.log', 'a', 'utf-8')
 info_handler.setFormatter(my_formatter)
 info_logger.addHandler(info_handler)
 

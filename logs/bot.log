@@ -1,0 +1,9 @@
+bot.py 2023-12-13 14:06:00,226 INFO Бот выполнил запрос. Ошибка: "None"
+dispatcher.py 2023-12-13 14:06:00,339 INFO Start polling
+dispatcher.py 2023-12-13 14:06:00,814 INFO Run polling for bot @some_test_123_bot id=5761144747 - 'testbot'
+bot.py 2023-12-13 14:06:01,006 INFO Боту пришло сообщение: "EUR RUR от Артем"
+bot.py 2023-12-13 14:06:01,668 INFO Бот ответил: "1 EUR = 96.95 RUR по курсу ЦБ"
+dispatcher.py 2023-12-13 14:06:01,670 INFO Update id=144375428 is handled. Duration 664 ms by bot id=5761144747
+dispatcher.py 2023-12-13 14:07:07,381 WARNING Received SIGTERM signal
+dispatcher.py 2023-12-13 14:07:07,382 INFO Polling stopped for bot @some_test_123_bot id=5761144747 - 'testbot'
+dispatcher.py 2023-12-13 14:07:07,383 INFO Polling stopped

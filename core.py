@@ -30,7 +30,7 @@ class ConnectionException(Exception):
 my_formatter = logging.Formatter(
     '%(filename)s %(asctime)s %(levelname)s %(message)s')
 
-error_handler = logging.FileHandler('bot_errors.log', 'a', 'utf-8')
+error_handler = logging.FileHandler('logs/bot_errors.log', 'a', 'utf-8')
 error_handler.setFormatter(my_formatter)
 error_logger = logging.getLogger('Error')
 error_logger.setLevel(logging.ERROR)

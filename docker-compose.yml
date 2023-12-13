@@ -3,9 +3,16 @@ version: '1.11'
 services:
 
   bot:
-    image: eartzhi/currencybot
+    image: currencybot
     restart: unless-stopped
     command: python bot.py
+    container_name: bot
     build:
       context: .
       dockerfile: ./Dockerfile
+
+    volumes:
+      - logs:/logs
+
+volumes:
+  logs:
